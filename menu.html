@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Barra lateral dinamico</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <body>
+
+        <section class="container">
+          <div class="sidebar">
+          
+            <img src="LogoGalletaPequeña.png" width="120" alt="Logo">
+            <ul class="menu">
+              <li class="menu-item active"><a href="#">Inicio</a></li>
+              <li class="menu-item"><a href="#">Galeria</a></li>
+              <li class="menu-item"><a href="#">Productos</a></li>
+              <li class="menu-item"><a href="#">Nosotros</a></li>
+              <li class="menu-item"><a href="#">Blog</a></li>
+              <li class="menu-item"><a href="#">Contacto</a></li>
+            </ul>
+            <button class="logout-button">Cerrar Sesión</button>
+          </div>
+          
+          
+      
+          <div class="content">
+            <h2>SideBar</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit animi reiciendis, quis a sapiente ea consectetur veniam perspiciatis commodi, corporis voluptas architecto voluptatibus officia iure. Doloribus commodi, nihil voluptatum aperiam.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit animi reiciendis, quis a sapiente ea consectetur veniam perspiciatis commodi, corporis voluptas architecto voluptatibus officia iure. Doloribus commodi, nihil voluptatum aperiam.</p>
+          </div>
+      
+        </section>
+</body>
+<script>
+  // Obtener todos los elementos del menú
+  document.querySelectorAll('.menu-item').forEach(item => {
+    item.addEventListener('click', function () {
+      // Remover la clase 'active' de todos los elementos
+      document.querySelectorAll('.menu-item').forEach(el => el.classList.remove('active'));
+      // Añadir la clase 'active' al elemento clicado
+      this.classList.add('active');
+    });
+  });
+</script>
+</html>
